@@ -15,7 +15,7 @@ const Navbar = () => {
            
 
             <ul className='hidden md:flex justify-center items-center '>
-                {["Home", "About", "contact", "Work", "Skills", "Contacts"].map((item) => (
+                {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
                     <li className='mx-4 ' key={`link-${item}`}>
                         {/* <div className='w-[5px] bg-transparent mb-[50%] rounded-full'/> */}
                         <a className="text-gray-500 p-1 uppercase font-bold  hover:text-blue-500 duration-300" href={`#${item}`}>{item}</a>
@@ -53,7 +53,7 @@ const Navbar = () => {
                             
                             />
                             <ul className='h-[100%] w-[100%] p-0 m-0 flex flex-col justify-start items-start'>
-                            {["Home", "About", "contact", "Work", "Skills", "Contacts"].map((item) => (
+                            {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
                                 <li className='m-8' key={item}>
                                     <a className="text-gray-500 p-1 uppercase font-bold hover:text-blue-500 duration-300" onClick={() => setToggle(false)} href={`#${item}`}>{item}</a>
                                 </li>
